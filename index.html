@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveSix | Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Styles/index.css">
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo"><img src="/Assets/header/logo.png" alt="FiveSix Logo"></div>
+            <nav class="nav-links">
+                <a href="/index.html" class="active">Home</a>
+                <a href="/Pages/about-us.html">About Us</a>
+                <div class="dropdown">
+                    <a href="/Pages/products.html" class="dropdown-toggle">Products <i class="fa fa-chevron-down" style="font-size: 15px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#">Platform</a>
+                        <a href="/Pages/byotv.html">BYOTV</a>
+                        <a href="/Pages/companion.html">Companion</a>
+                    </div>
+                </div>
+                <a href="/Pages/help-center.html">Help Center</a>
+                <a href="/Pages/contact.html">Contact</a>
+            </nav>
+            
+            <div class="right-menu">
+                <a class="login-button" href="#">Login</a>
+                <a class="button get-started" href="#">Get Started <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+            </div>
+    
+            <!-- Hamburger Icon -->
+             <div class="icon-side">
+                <a class="login-button" href="#">Login</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Flyout Menu -->
+        <div class="flyout-menu" id="flyoutMenu">
+            <!-- Close Button -->
+            <div class="close-button" onclick="toggleMenu()">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="flyout-content">
+                <nav class="nav-links">
+                    <a href="/index.html" class="active">Home</a>
+                    <a href="/Pages/about-us.html">About Us</a>
+                    <div class="dropdown">
+                        <a href="/Pages/products.html" class="dropdown-toggle">Products <i class="fa fa-chevron-down" style="font-size: 15px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#">Platform</a>
+                            <a href="/Pages/byotv.html">BYOTV</a>
+                            <a href="/Pages/companion.html">Companion</a>
+                        </div>
+                    </div>
+                    <a href="/Pages/help-center.html">Help Center</a>
+                    <a href="/Pages/contact.html">Contact</a>
+                </nav>
+                <div class="right-menu">
+                    <a class="login-button" href="#">Login</a>
+                    <a class="button get-started" href="#">Get Started <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>Digital Signage Ads That Works.</h1>
+            <p>Reach Your Audience Where They Are, When it Matters Most</p>
+            <div class="hero-buttons">
+                <a class="button get-started" id="sec-button" href="#">Get Started <span class="arrow" id="sec-arrow"><i class="fas fa-arrow-right"></i></span></a>
+                <a href="#" class="learn-more-button">Learn How It Works <i class="fas fa-question"></i></a>
+            </div>
+            <div class="testimonial-container">
+                <div class="image-group">
+                    <img src="/Assets/index/section1/w1.png" alt="Customer 1" class="profile-img">
+                    <img src="/Assets/index/section1/w2.png" alt="Customer 2" class="profile-img">
+                    <img src="/Assets/index/section1/w3.png" alt="Customer 3" class="profile-img">
+                    <img src="/Assets/index/section1/w4.png" alt="Customer 4" class="profile-img">
+                    <div class="count-overlay">900+</div>
+                </div>
+                <div class="rating-text">
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p>Over 900 happy brands</p>
+                </div>
+            </div>            
+
+        </div>
+    </section> 
+    
+    <section class="sec-section">
+        <div class="background-image">
+            <img src="/Assets/index/section2/1.jpg" alt="Background Image">
+        </div>
+        <div class="overlay-image">
+            <img src="/Assets/index/section2/2.png" alt="Dashboard Image">
+        </div>
+    </section> 
+    
+    <section class="third-section">
+        <div class="before-section-title">
+            <div class="trusted-brands">
+                <p>Trusted by 900+ brands, delivering targeted ads that converts</p>
+            </div>
+            <div class="logo-images">
+                <img src="/Assets/index/section3/brand-logo.png">
+                <img src="/Assets/index/section3/brand-logo.png">
+                <img src="/Assets/index/section3/brand-logo.png">
+                <img src="/Assets/index/section3/brand-logo.png">
+                <img src="/Assets/index/section3/brand-logo.png">
+            </div>
+        </div>
+        <div class="custom-button">
+            <span class="icon"><i class="fas fa-briefcase"></i></span>
+            What We Do
+        </div>      
+        <div class="section-title">
+            <h2>Empowering Brands Through Innovative Advertising Solutions</h2>
+            <p>We Drive Engagement and Visibility with Dynamic Digital Signage Campaigns</p>
+        </div>
+        <div class="cards-container">
+            <div class="card small-card card1">
+                <h3>Target Audience</h3>
+                <p>Our platform is designed to help you reach your target audience where they are - in their local communities</p>
+            </div>
+            <div class="card large-card  card2">
+                <h3>Manage Ads</h3>
+                <p>Our user-friendly interface allows you to upload or request for ad creative, set your own budget, set start and end date, and launch your ads.</p>
+            </div>
+            <div class="card small-card card3">
+                <h3>Analyze Performance</h3>
+                <p>We provide detailed reporting and analytics to help you track the success of your campaigns</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="fourth-section">
+        <div class="side1">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Targeted Advertising</h2>
+                    <p>
+                        Our platform allows you to create highly targeted advertising campaigns based on specific locations, demographics, and interests. This ensures that your message is reaching the right people at the right time.
+                    </p>
+                    <a class="button get-started" href="#">Get Started <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="side2">
+            <img class="img1" src="/Assets/index/section4/1.png" alt="">
+            <img class="img2" src="/Assets/index/section4/2.png" alt="">
+        </div>
+
+        <div class="side3">
+            <img class="img1" src="/Assets/index/section4/3.png" alt="">
+            <img class="img2" src="/Assets/index/section4/4.png" alt="">
+        </div>
+
+        <div class="side4">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Location Selection</h2>
+                    <p>
+                        We provide a range of location selection options that enable you to advertise at local businesses or stores that your customers frequent. Our platform allows you to search for your desired locations. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="side5">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Campaign Management</h2>
+                    <p>
+                        Our user-friendly interface makes it easy for you to set your own budget, schedule your campaigns, and track your results in real-time. You can adjust your campaigns as needed to ensure that you're getting the best possible result.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="side6">
+            <img class="img1" src="/Assets/index/section4/5.png" alt="">
+            <img class="img2" src="/Assets/index/section4/6.png" alt="">
+        </div>
+
+        <div class="side7">
+            <img class="img1" src="/Assets/index/section4/7.png" alt="">
+            <img class="img2" src="/Assets/index/section4/8.png" alt="">
+        </div>
+
+        <div class="side8">
+            <div class="content-wrapper">
+                <div class="text-content">
+                    <h2>Comprehensive Reporting & Analytics</h2>
+                    <p>
+                        Our platform provides you with comprehensive reporting and analytics, allowing you to track the success of your advertising campaigns in real-time. This information can help you make informed decisions about future advertising efforts and adjust your strategy as needed.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="fifth-section">
+
+        <div class="custom-button" style="padding-right: 30px; padding-left: 30px;">
+            <span class="icon"><i class="fa-solid fa-circle-play"></i></span>
+            How to
+        </div>  
+
+        <div class="section-title" style="color: white;">
+            <h2>Run Your Ads Campaign In Four Easy Steps</h2>
+        </div>
+
+        <div class="content-div">
+            <div class="box">
+                <div class="icon"><i class="fas fa-users"></i></div>
+                <div class="box-data">
+                    <h3>Get Started</h3>
+                    <p>Ready to get started? Just sign up for an account! It's super easy—we only need a few details from you. Or, if you prefer, you can register using your social media login. Your choice!</p>  
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-credit-card"></i></div>
+                <div class="box-data">
+                    <h3>Add Billing details</h3>
+                    <p>Once youre all set up, just add your billing details. Don't worry, you won't be charged until your ads are finished. Plus, we offer various billing methods, so you can pick what works best for you!</p>  
+                </div>
+            </div>
+        </div>
+
+        <div class="img-div"><img src="/Assets/index/section5/1.png" alt="TV"></div>
+
+        <div class="content-div">
+            <div class="box">
+                <div class="icon"><i class="fas fa-play-circle"></i></div>
+                <div class="box-data">
+                    <h3>Create Your Campaign</h3>
+                    <p>Creating a campaign is a breeze! Just pick your location, set your budget, and upload your ad creative. You've got options too—whether it's a single image, a carousel of images, or even a video. Need a hand with design? No problem, you can also request our design service! Easy peasy, right?</p>  
+                </div>
+            </div>
+            <div class="box">
+                <div class="icon"><i class="fas fa-thumbs-up"></i></div>
+                <div class="box-data">
+                    <h3>Campaign Approved</h3>
+                    <p>Once your campaign is submitted, it undergoes review and approval to ensure it complies with our advertising policy. Then, you'll receive reports on your ad performance. And the best part? Expect a stream of eager customers ready to buy!</p>  
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sixth-section">
+
+        <div class="custom-button" id="custom-button2">
+            <span class="icon"><i class="fas fa-users"></i></span>
+            Testimonials
+        </div>  
+
+        <div class="sixth-section-heading">
+            <h2>What Our Customers Are Saying About FiveSix Meda</h2>
+            <p>Use keyboard &nbsp;<i class="fas fa-angle-double-left"></i>&nbsp;&nbsp;&nbsp;<i class="fas fa-angle-double-right"></i> &nbsp;to navigate through testimonials</p>
+        </div>
+
+        <div class="carousel-section">
+            <div class="carousel-wrapper">
+                <div class="cards-carousel">
+                    <p>The team at FiveSix Media provided us with valuable insights that helped us achieve our advertising goals. We've seen a significant increase in brand awareness and engagement since we started using FiveSix Media.</p>
+                    <div class="testimonial-author">
+                        <img src="/Assets/index/section6/1.png" alt="Sara Wilson">
+                        <div class="testimonial-author-info">
+                            <strong>Sara Wilson</strong>
+                            <p>Director of Marketing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-carousel">
+                    <p>I love how easy it is to advertise on FiveSix Media. The platform is user-friendly, and I was able to set up my first campaign in just a few minutes. I highly recommend it to any business looking to grow.</p>
+                    <div class="testimonial-author">
+                        <img src="/Assets/index/section6/2.png" alt="David Lee">
+                        <div class="testimonial-author-info">
+                            <strong>David Lee</strong>
+                            <p>Owner of David's Coffee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards-carousel">
+                    <p>Advertising through FiveSix Media has allowed me to reach my target audience at their favorite spot around town. It's been an effective and affordable way to grow my business.</p>
+                    <div class="testimonial-author">
+                        <img src="/Assets/index/section6/3.png" alt="Matt Brandon">
+                        <div class="testimonial-author-info">
+                            <strong>Matt Brandon</strong>
+                            <p>Marketing Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="buttons-carousel">
+            <div id="prev-swiper-button" class="swiper-button">
+                <i class="fas fa-angle-double-left"></i>
+            </div>
+            <div id="next-swiper-button" class="swiper-button">
+                <i class="fas fa-angle-double-right"></i>
+            </div>
+        </div>
+        
+
+    </section>
+
+    <footer>
+        <section class="ad-campaign-section">
+            <div class="content">
+                <h4>Target your audience at their favorite spots</h4>
+                <h2>Run ad campaigns that perform better than average</h2>
+                <div class="hero-buttons" id="footer-button">
+                    <a class="button get-started" id="sec-button" href="#">Get Started <span class="arrow" id="sec-arrow"><i class="fas fa-arrow-right"></i></span></a>
+                    <a href="#" class="learn-more-button">Learn How It Works <i class="fas fa-question"></i> </a>
+                </div>
+            </div>
+            <div class="overlay-elements">
+                <img class="img1" src="/Assets/footer/2.png" alt="">
+                <img class="img2" src="/Assets/footer/1.png" alt="">
+            </div>
+        </section>        
+
+        <div class="footer-top">
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Get the latest about FiveSix Media and its service offerings - straight into your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <p>Follow us on our social media pages</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="company-info">
+                <img src="/Assets/header/logo.png" alt="FiveSix Media Logo">
+                <p class="tagline">At FiveSix media our mission is to help businesses like yours succeed by providing a simple, effective, and affordable way to advertise locally. Our platform is designed to be user-friendly and accessible to businesses of all sizes.</p>
+                <p><i class="fa fa-phone"></i> +1 (871) 431-6993</p>
+                <p><i class="fa fa-envelope"></i> info@fivesixmedia.com</p>
+            </div>
+            <div class="footer-links-wrapper">
+                <div class="footer-links">
+                    <a href="#">Get Started</a>
+                    <a href="#">Login</a>
+                    <a href="/Pages/help-center.html">Help Center</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Services</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <p>We are available 24/7 to respond</p>
+                <form>
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                    <input type="tel" placeholder="Phone number" required>
+                    <input type="email" placeholder="Email address" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 FiveSix Media Inc. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+<script src="/Javascript/app.js"></script>
+</html>

@@ -1,0 +1,77 @@
+{
+    "blogs": [
+      {
+        "id": "1",
+        "title": "How to Create an Account",
+        "content": "This guide walks you through the process of creating an account. Follow these simple steps to get started...",
+        "category": "getting started",
+        "date": "2024-11-01",
+        "imageUrl": "/Assets/Help Center/create-account-image.jpg"
+      },
+      {
+        "id": "2",
+        "title": "Adding a Billing Method",
+        "content": "Learn how to add a billing method to your account. This section covers the step-by-step process...",
+        "category": "getting started",
+        "date": "2024-11-02",
+        "imageUrl": "/Assets/Help Center/billing-method-image.jpg"
+      },
+      {
+        "id": "3",
+        "title": "Popular Blog Post 1",
+        "content": "This blog post is very popular and provides tips on how to improve your workflow...",
+        "category": "popular",
+        "date": "2024-10-20",
+        "imageUrl": "/Assets/Help Center/popular-blog-1.jpg"
+      },
+      {
+        "id": "4",
+        "title": "Popular Blog Post 2",
+        "content": "Another popular post that discusses new trends in technology and how they impact your daily tasks...",
+        "category": "popular",
+        "date": "2024-10-25",
+        "imageUrl": "/Assets/Help Center/popular-blog-2.jpg"
+      },
+      {
+        "id": "5",
+        "title": "Recommended Blog Post 1",
+        "content": "Check out this recommended post that helps you optimize your productivity with advanced tools...",
+        "category": "recommended",
+        "date": "2024-11-03",
+        "imageUrl": "/Assets/Help Center/recommended-blog-1.jpg"
+      },
+      {
+        "id": "6",
+        "title": "Recommended Blog Post 2",
+        "content": "Another recommended post focusing on strategies for improving your work-life balance...",
+        "category": "recommended",
+        "date": "2024-11-05",
+        "imageUrl": "/Assets/Help Center/recommended-blog-2.jpg"
+      },
+      {
+        "id": "7",
+        "title": "Helpful Blog Post 1",
+        "content": "This blog post provides some helpful tips on how to manage your account settings effectively...",
+        "category": "helpful",
+        "date": "2024-11-06",
+        "imageUrl": "/Assets/Help Center/helpful-blog-1.jpg"
+      },
+      {
+        "id": "8",
+        "title": "Helpful Blog Post 2",
+        "content": "Get answers to common questions about our platform and its features in this helpful post...",
+        "category": "helpful",
+        "date": "2024-11-07",
+        "imageUrl": "/Assets/Help Center/helpful-blog-2.jpg"
+      },
+      {
+        "id": "9",
+        "title": "Helpful Blog Post 3",
+        "content": "In this post, we break down the most frequently asked questions and troubleshooting tips for new users...",
+        "category": "helpful",
+        "date": "2024-11-08",
+        "imageUrl": "/Assets/Help Center/helpful-blog-3.jpg"
+      }
+    ]
+  }
+  

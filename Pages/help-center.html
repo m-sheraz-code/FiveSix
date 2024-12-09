@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FiveSix | Help Center</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Styles/help-center.css">
+    <script src="/Javascript/script.js" defer></script>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo"><img src="/Assets/header/logo.png" alt="FiveSix Logo"></div>
+            <nav class="nav-links">
+                <a href="/index.html" class="active">Home</a>
+                <a href="/Pages/about-us.html">About Us</a>
+                <div class="dropdown">
+                    <a href="/Pages/products.html" class="dropdown-toggle">Products <i class="fa fa-chevron-down" style="font-size: 15px;"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#">Platform</a>
+                        <a href="/Pages/byotv.html">BYOTV</a>
+                        <a href="/Pages/companion.html">Companion</a>
+                    </div>
+                </div>
+                <a href="/Pages/help-center.html">Help Center</a>
+                <a href="/Pages/contact.html">Contact</a>
+            </nav>
+            
+            <div class="right-menu">
+                <a class="login-button" href="#">Login</a>
+                <a class="button get-started" href="#">Get Started <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+            </div>
+    
+            <!-- Hamburger Icon -->
+             <div class="icon-side">
+                <a class="login-button" href="#">Login</a>
+                <div class="hamburger" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    
+        <!-- Flyout Menu -->
+        <div class="flyout-menu" id="flyoutMenu">
+            <!-- Close Button -->
+            <div class="close-button" onclick="toggleMenu()">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="flyout-content">
+                <nav class="nav-links">
+                    <a href="/index.html" class="active">Home</a>
+                    <a href="/Pages/about-us.html">About Us</a>
+                    <div class="dropdown">
+                        <a href="/Pages/products.html" class="dropdown-toggle">Products <i class="fa fa-chevron-down" style="font-size: 15px;"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="#">Platform</a>
+                            <a href="#">BYOTV</a>
+                            <a href="#">Companion</a>
+                        </div>
+                    </div>
+                    <a href="/Pages/help-center.html">Help Center</a>
+                    <a href="/Pages/contact.html">Contact</a>
+                </nav>
+                <div class="right-menu">
+                    <a class="login-button" href="#">Login</a>
+                    <a class="button get-started" href="#">Get Started <span class="arrow"><i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+
+         
+    <div class="hero-section">
+        <h1>Help Center</h1>
+
+        <p>Get an overview of FiveSix Media Inc features, common questions<br />and how to run a compaign</p>
+        
+        <div>
+            <button class="btn">Chat with Support</button>
+
+            <div>
+                <img src="/Assets/Help Center/phoneIcon.png" alt="">
+                <span>+1 (871) 431-6993</span>
+            </div>
+
+            <div>
+                <img src="/Assets/Help Center/mailIcon.png" alt="">
+                <span>info@fivesixmedia.com</span>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <div class="hamburger-tabs" onclick="toggleTabsMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <div class="flyout-menu-tabs" id="flyoutMenuTabs">
+            <div class="close-button-tabs" onclick="toggleTabsMenu()">
+                <i class="fas fa-times"></i>
+            </div>
+
+            <div class="menu">
+                <div class="search-bar">
+                    <img src="/Assets/Help Center/searchIcon.png" alt="">
+                    <input type="text">
+                </div>
+    
+                <ul>
+                    <li class="menu-item" data-content="most-popular">Most Popular</li>
+
+                    <li class="menu-item has-submenu">
+                        <div class="menu-title" data-content="getting-started">
+                            Getting Started
+                            <img src="/Assets/Help Center/arrow_down.png" class="arrow-icon arrow-down" alt="Expand">
+                            <img src="/Assets/Help Center/arrow_up.png" class="arrow-icon arrow-up" style="display: none;" alt="Collapse">
+                        </div>
+    
+                        <ul class="submenu">
+                            <li class="submenu-item" data-content="create-account">Create an Account</li>
+                            <li class="submenu-item" data-content="add-billing">Add Billing Method</li>
+                            <li class="submenu-item" data-content="verify-billing">Verifying Your Billing Method</li>
+                            <li class="submenu-item" data-content="run-campaign">Running a Campaign</li>
+                        </ul>
+                    </li>
+                    
+                    <li class="menu-item" data-content="faq">Frequently Asked Questions</li>
+        
+                    <li class="menu-item has-submenu">
+                        <div class="menu-title" data-content="helpful-articles">
+                            Helpful Articles
+                            <img src="/Assets/Help Center/arrow_down.png" class="arrow-icon arrow-down" alt="Expand">
+                            <img src="/Assets/Help Center/arrow_up.png" class="arrow-icon arrow-up" style="display: none;" alt="Collapse">
+                        </div>
+                        <ul class="submenu">
+                            <li class="submenu-item" data-content="helpful1"></li>
+                            <li class="submenu-item" data-content="helpful2"></li>
+                            <li class="submenu-item" data-content="helpful3"></li>
+                        </ul>
+                    </li>
+        
+                    <li class="menu-item" data-content="advertising-policy">Advertising Policy</li>
+                </ul>
+            </div>
+        </div>
+    
+        <div class="content">
+            <div class="content-header" id ="contentHeader">
+                <button class="btn active" data-content="most-popular">Advertisers</button>
+                <button class="btn" data-content="managers-content">Location Managers</button>
+            </div>
+
+            <div id="most-popular" class="content-section">
+
+                <div class="most-popular" id="most-popular">
+
+                    <h2>Most Popular</h2>
+
+                    <div class="cards">
+                        <div>
+                            <img src="/Assets/Help Center/cubeIcon.png" alt="">
+                            <span>Create Account</span>
+                        </div>
+
+                        <div>
+                            <img src="/Assets/Help Center/cubeIcon.png" alt="">
+                            <span>Billing Method</span>
+                        </div>
+
+                        <div>
+                            <img src="/Assets/Help Center/cubeIcon.png" alt="">
+                            <span>Ads Creative</span>
+                        </div>
+                   
+                        <div>
+                            <img src="/Assets/Help Center/cubeIcon.png" alt="">
+                            <span>Option 4</span>
+                        </div>
+
+                        <div>
+                            <img src="/Assets/Help Center/cubeIcon.png" alt="">
+                            <span>Option 5</span>
+                        </div>
+
+                        <div>
+                            <img src="/Assets/Help Center/cubeIcon.png" alt="">
+                            <span>Option 6</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="articles" id="articles">
+                    <h2>Recommended Articles</h2>
+
+                    <div class="row">
+                        <div class="card">
+                            <img src="/Assets/Help Center/office-room.jpg" alt="office room">
+
+                            <div>
+                                <h3>Get Started</h3>
+
+                                <div>
+                                    <span>Creating an Account</span>
+                                    <img src="/Assets/Help Center/arrow-tr.png" alt="arrow top right">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/Assets/Help Center/office-room.jpg" alt="office room">
+
+                            <div>
+                                <h3>Get Started</h3>
+
+                                <div>
+                                    <span>Creating an Account</span>
+                                    <img src="/Assets/Help Center/arrow-tr.png" alt="arrow top right">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <img src="/Assets/Help Center/office-room.jpg" alt="office room">
+
+                            <div>
+                                <h3>Get Started</h3>
+                                <div>
+                                    <span>Creating an Account</span>
+                                    <img src="/Assets/Help Center/arrow-tr.png" alt="arrow top right">
+                                </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+                
+            </div>
+
+            <div id="create-account" class="content-section">
+                <h2></h2>
+            
+                <div class="container">
+                    <div class="main">
+                        <div class="main-content">
+                            <img src="" alt="image placeholder">
+            
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+            
+                        <div class="main-footer">
+                            <div class="nav-links">
+                                <div class="nav-previous" data-target="previous-section">
+                                    <img src="/Assets/Help Center/arrow-left.png" alt="arrow left">
+                                    <span>Previous</span>
+                                </div>
+            
+                                <div class="nav-next" data-target="next-section">
+                                    <span>Next</span>
+                                    <img src="/Assets/Help Center/arrow-right.png" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="/Assets/Help Center/menuIcon.png" alt="menu icon">
+                            <span>Outline for this page</span>
+                        </div>
+            
+                        <div class="outline">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Option 1</li>
+                                <li>Option 2</li>
+                                <li>Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="add-billing" class="content-section">
+                <h2></h2>
+
+                <div class="container">
+                    <div class="main">
+                        <div class="main-content">
+                            <img src="" alt="image placeholder">
+            
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+            
+                        <div class="main-footer">
+                            <div class="nav-links">
+                                <div class="nav-previous" data-target="previous-section">
+                                    <img src="/Assets/Help Center/arrow-left.png" alt="arrow left">
+                                    <span>Previous</span>
+                                </div>
+            
+                                <div class="nav-next" data-target="next-section">
+                                    <span>Next</span>
+                                    <img src="/Assets/Help Center/arrow-right.png" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="/Assets/Help Center/menuIcon.png" alt="menu icon">
+                            <span>Outline for this page</span>
+                        </div>
+            
+                        <div class="outline">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Option 1</li>
+                                <li>Option 2</li>
+                                <li>Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="verify-billing" class="content-section">
+                <h2></h2>
+
+                <div class="container">
+                    <div class="main">
+                        <div class="main-content">
+                            <img src="" alt="image placeholder">
+            
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+            
+                        <div class="main-footer">
+                            <div class="nav-links">
+                                <div class="nav-previous" data-target="previous-section">
+                                    <img src="/Assets/Help Center/arrow-left.png" alt="arrow left">
+                                    <span>Previous</span>
+                                </div>
+            
+                                <div class="nav-next" data-target="next-section">
+                                    <span>Next</span>
+                                    <img src="/Assets/Help Center/arrow-right.png" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="/Assets/Help Center/menuIcon.png" alt="menu icon">
+                            <span>Outline for this page</span>
+                        </div>
+            
+                        <div class="outline">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Option 1</li>
+                                <li>Option 2</li>
+                                <li>Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="run-campaign" class="content-section">
+                <h2></h2>
+
+                <div class="container">
+                    <div class="main">
+                        <div class="main-content">
+                            <img src="" alt="image placeholder">
+            
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+            
+                        <div class="main-footer">
+                            <div class="nav-links">
+                                <div class="nav-previous" data-target="previous-section">
+                                    <img src="/Assets/Help Center/arrow-left.png" alt="arrow left">
+                                    <span>Previous</span>
+                                </div>
+            
+                                <div class="nav-next" data-target="next-section">
+                                    <span>Next</span>
+                                    <img src="/Assets/Help Center/arrow-right.png" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="/Assets/Help Center/menuIcon.png" alt="menu icon">
+                            <span>Outline for this page</span>
+                        </div>
+            
+                        <div class="outline">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Option 1</li>
+                                <li>Option 2</li>
+                                <li>Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="faq" class="content-section">
+
+                <h2>Frequently Asked Questions</h2>
+
+                <div>
+
+                <button class="faqs">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</button>
+                <div class="faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="faqs">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</button>
+                <div class="faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+
+                <button class="faqs">Lorem ipsum dolor sit amet, consectetur adipisicing elit,</button>
+                <div class="faq-content">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+            </div>
+            </div>
+
+            <div id="helpful-articles" class="content-section">Helpful Articles Content</div>
+            
+            <div id="helpful1" class="content-section">
+                <h2></h2>
+
+                <div class="container">
+                    <div class="main">
+                        <div class="main-content">
+                            <img src="" alt="image placeholder">
+            
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+            
+                        <div class="main-footer">
+                            <div class="nav-links">
+                                <div class="nav-previous" data-target="previous-section">
+                                    <img src="/Assets/Help Center/arrow-left.png" alt="arrow left">
+                                    <span>Previous</span>
+                                </div>
+            
+                                <div class="nav-next" data-target="next-section">
+                                    <span>Next</span>
+                                    <img src="/Assets/Help Center/arrow-right.png" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="/Assets/Help Center/menuIcon.png" alt="menu icon">
+                            <span>Outline for this page</span>
+                        </div>
+            
+                        <div class="outline">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Option 1</li>
+                                <li>Option 2</li>
+                                <li>Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="helpful2" class="content-section">
+                <h2></h2>
+
+                <div class="container">
+                    <div class="main">
+                        <div class="main-content">
+                            <img src="" alt="image placeholder">
+            
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+            
+                        <div class="main-footer">
+                            <div class="nav-links">
+                                <div class="nav-previous" data-target="previous-section">
+                                    <img src="/Assets/Help Center/arrow-left.png" alt="arrow left">
+                                    <span>Previous</span>
+                                </div>
+            
+                                <div class="nav-next" data-target="next-section">
+                                    <span>Next</span>
+                                    <img src="/Assets/Help Center/arrow-right.png" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="/Assets/Help Center/menuIcon.png" alt="menu icon">
+                            <span>Outline for this page</span>
+                        </div>
+            
+                        <div class="outline">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Option 1</li>
+                                <li>Option 2</li>
+                                <li>Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="helpful3" class="content-section">
+                <h2></h2>
+
+                <div class="container">
+                    <div class="main">
+                        <div class="main-content">
+                            <img src="" alt="image placeholder">
+            
+                            <div>
+                                <h3></h3>
+                                <p></p>
+                            </div>
+                        </div>
+            
+                        <div class="main-footer">
+                            <div class="nav-links">
+                                <div class="nav-previous" data-target="previous-section">
+                                    <img src="/Assets/Help Center/arrow-left.png" alt="arrow left">
+                                    <span>Previous</span>
+                                </div>
+            
+                                <div class="nav-next" data-target="next-section">
+                                    <span>Next</span>
+                                    <img src="/Assets/Help Center/arrow-right.png" alt="arrow right">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="sidebar">
+                        <div class="sidebar-header">
+                            <img src="/Assets/Help Center/menuIcon.png" alt="menu icon">
+                            <span>Outline for this page</span>
+                        </div>
+            
+                        <div class="outline">
+                            <ul>
+                                <li>Overview</li>
+                                <li>Option 1</li>
+                                <li>Option 2</li>
+                                <li>Option 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="managers-content" class="content-section">Advertisers Managers Content</div>
+        
+        </div>
+
+
+    </div>
+
+
+    <footer>
+        <section class="ad-campaign-section">
+            <div class="content">
+                <h4>Target your audience at their favorite spots</h4>
+                <h2>Run ad campaigns that perform better than average</h2>
+                <div class="hero-buttons" id="footer-button">
+                    <a class="button get-started" id="third-button" href="#">Get Started <span class="arrow" id="sec-arrow"><i class="fas fa-arrow-right"></i></span></a>                    <a href="#" class="learn-more-button">Learn How It Works <i class="fas fa-question"></i> </a>
+                </div>
+            </div>
+            <div class="overlay-elements">
+                <img class="img1" src="/Assets/footer/2.png" alt="">
+                <img class="img2" src="/Assets/footer/1.png" alt="">
+            </div>
+        </section>        
+
+        <div class="footer-top">
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <p>Get the latest about FiveSix Media and its service offerings - straight into your inbox.</p>
+                <form>
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+            <div class="social-media">
+                <p>Follow us on our social media pages</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                </div>                
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="company-info">
+                <img src="/Assets/header/logo.png" alt="FiveSix Media Logo">
+                <p class="tagline">At FiveSix media our mission is to help businesses like yours succeed by providing a simple, effective, and affordable way to advertise locally. Our platform is designed to be user-friendly and accessible to businesses of all sizes.</p>
+                <p><i class="fa fa-phone"></i> +1 (871) 431-6993</p>
+                <p><i class="fa fa-envelope"></i> info@fivesixmedia.com</p>
+            </div>
+            <div class="footer-links-wrapper">
+                <div class="footer-links">
+                    <a href="#">Get Started</a>
+                    <a href="#">Login</a>
+                    <a href="/Pages/help-center.html">Help Center</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Services</a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Contact Us</h3>
+                <p>We are available 24/7 to respond</p>
+                <form>
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                    <input type="tel" placeholder="Phone number" required>
+                    <input type="email" placeholder="Email address" required>
+                    <textarea placeholder="Message" required></textarea>
+                    <button type="submit">Send message</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>&copy; 2024 FiveSix Media Inc. All rights reserved</p>
+        </div>
+    </footer>
+</body>
+<script src="/Javascript/app.js"></script>
+<script src="/Javascript/menu.js"></script>
+</html>
